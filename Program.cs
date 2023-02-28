@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace zeca_c_
 {
@@ -8,20 +8,24 @@ namespace zeca_c_
         {
             //calclar nota 
 
-            int nota1 = 0;
-            int nota2 = 0;
-            int resultado = 0;
+            double np1 = 0;
+            double np2 = 0;
+            double pim = 0;
+            double calcular;
 
-            Console.WriteLine("primera nota:");
-            nota1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("primera nota np1:");
+            np1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("segunda nota:");
-            nota2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("segunda nota np2:");
+            np2 = Convert.ToDouble(Console.ReadLine());
 
-            resultado = (nota1 + nota2) / 2;
+            Console.WriteLine("segunda nota pim:");
+            pim = Convert.ToDouble(Console.ReadLine());
 
-            if (resultado >= 5){
-                Console.WriteLine($"Foi aprovado seu filha da puta, sai desse pc");
+            calcular = ((np1 * 0.4) + (np2 * 0.4) + (pim * 0.2));
+
+            if (calcular >= 5){
+                Console.WriteLine($"Quer parabens? Só porque comi sua mãe não significa que sou seu pai");
                 Console.ReadLine();
             }
             else{
